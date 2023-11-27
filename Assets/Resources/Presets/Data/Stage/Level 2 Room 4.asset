@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9149ba9dbbfa6394f8f9e37fb4f336ba, type: 3}
+  m_Name: Level 2 Room 4
+  m_EditorClassIdentifier: 
+  data:
+    stage: {fileID: 11400000, guid: bc680b55387e0384c89dea58014b72f0, type: 2}
+    name: Entry
+    hideRoom: 0
+  configuration:
+    idScene: 6
+    scenesString:
+    - Scene_Level2_4
+    - Scene_Level2_3
+    - Scene_Level3_1
+    scenes:
+    - Scene_Level2_4
+    - Scene_Level2_3
+    - Scene_Level3_1
+    sceneCurrent: {fileID: 102900000, guid: 3c38ca94e01491f44bd42fccb9548670, type: 3}
+    sceneToLoad:
+    - {fileID: 102900000, guid: fb5be919f37040d42b76d9d0c081878a, type: 3}
+    - {fileID: 102900000, guid: 9061cb77a0a87ce459df80509cf97cd4, type: 3}

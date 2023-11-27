@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Stage
+    m_Hash: 62766189
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Skyground
+      m_Hash: 261776067
+      m_Sprite: {fileID: 21300000, guid: 5f732fb9ccac37c4586dc164a0cbdd18, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 21300000, guid: ab5a86518185bd5419e7820e8526392b, type: 3}
+    - m_Name: Background1
+      m_Hash: 781670688
+      m_Sprite: {fileID: 21300000, guid: eee4ee694376d91459fe0f64eff752b1, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 21300000, guid: 2bf14c0a4c4ac3a43864eed8abf8f5b5, type: 3}
+    - m_Name: Background2
+      m_Hash: 933103770
+      m_Sprite: {fileID: 21300000, guid: 71c2b8a9e95804849aea7bb55356f08e, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 21300000, guid: c853757068b6e3e47b780a39d1015b8b, type: 3}
+    - m_Name: Centerground
+      m_Hash: 168522265
+      m_Sprite: {fileID: 21300000, guid: 882aa2674b38da141a0140e3460dde23, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 21300000, guid: a1d444b439db8d843abb7d691846e5b9, type: 3}
+    - m_Name: Foreground1
+      m_Hash: 783703569
+      m_Sprite: {fileID: 21300000, guid: abf8a4e70ecb38148a550bc1e8f8f277, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 21300000, guid: 80d0e2b2fdc38254b81ae784b9fd4b8b, type: 3}
+    - m_Name: Foreground2
+      m_Hash: 935268267
+      m_Sprite: {fileID: 21300000, guid: d44240cee5d21834b807a6580a3235af, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 21300000, guid: b4350e8e9f2c0234a907cd5579c94d04, type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 6
+  m_PrimaryLibraryGUID: a7d0076a51e6dfd468e997dc70007e2c

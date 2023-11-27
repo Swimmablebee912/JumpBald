@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9149ba9dbbfa6394f8f9e37fb4f336ba, type: 3}
+  m_Name: Level 1 Room 2
+  m_EditorClassIdentifier: 
+  data:
+    stage: {fileID: 11400000, guid: ac1bc8a20c6aa524bb72e85bd9648271, type: 2}
+    name: Camp
+    hideRoom: 0
+  configuration:
+    idScene: 1
+    scenesString:
+    - Scene_Level1_1
+    - Scene_Level1_0
+    - Scene_Level1_2
+    scenes:
+    - Scene_Level1_1
+    - Scene_Level1_0
+    - Scene_Level1_2
+    sceneCurrent: {fileID: 102900000, guid: 2b98709427c404241946401abbaff158, type: 3}
+    sceneToLoad:
+    - {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+    - {fileID: 102900000, guid: 54292e5a68747084c9c32ff1a82e8a20, type: 3}

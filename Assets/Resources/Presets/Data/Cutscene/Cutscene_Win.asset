@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6799deb0118f86b4aa12fd89044b11a3, type: 3}
+  m_Name: Cutscene_Win
+  m_EditorClassIdentifier: 
+  data:
+    name: Ending
+    diapositive:
+    - nameDiapositive: Ending
+      text: The door is closed
+      illustration: {fileID: 21300000, guid: 4ac198e3cfee5984ca1d5589d3134772, type: 3}
+    - nameDiapositive: Ending
+      text: Tok Tok
+      illustration: {fileID: 21300000, guid: a967b19ed1460f24590fca3a7b201e3d, type: 3}
+    - nameDiapositive: Ending
+      text: But it won't prevent my revenge.
+      illustration: {fileID: 21300000, guid: 4ac198e3cfee5984ca1d5589d3134772, type: 3}
+    - nameDiapositive: Ending
+      text: It won't.
+      illustration: {fileID: 21300000, guid: 4ac198e3cfee5984ca1d5589d3134772, type: 3}
+    - nameDiapositive: Ending
+      text: ...
+      illustration: {fileID: 21300000, guid: 4910eac2312e3554f928482d50167ef7, type: 3}
+    - nameDiapositive: 6
+      text: Well.
+      illustration: {fileID: 21300000, guid: 985881f51916aa740adc38543c1a0670, type: 3}
+  configuration:
+    ToNextScene: MainMenu
+    ToNextSubScreen: StartGame

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed4060563c34874da3240d08d008c13, type: 3}
+  m_Name: ScreenData_MainMenu
+  m_EditorClassIdentifier: 
+  nameScene: MainMenu
+  sceneLoad: Scene_MainMenu
+  objCanvas: {fileID: 1963306670263327556, guid: d244537ef53d2e443ab5742bf01c5bb7, type: 3}
+  subScenes:
+  - name: StartGame
+    nameTriggerToAnimator: StartGame
+    canStopTime: 0
+  - name: MainMenu
+    nameTriggerToAnimator: MainMenu
+    canStopTime: 0
+  - name: Options
+    nameTriggerToAnimator: Options
+    canStopTime: 0
+  - name: Credits
+    nameTriggerToAnimator: Credits
+    canStopTime: 0
+  - name: Load
+    nameTriggerToAnimator: Load
+    canStopTime: 0
+  - name: Close
+    nameTriggerToAnimator: Close
+    canStopTime: 0

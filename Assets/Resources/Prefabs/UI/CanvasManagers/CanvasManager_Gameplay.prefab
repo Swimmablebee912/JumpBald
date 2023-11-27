@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &723044347126053114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 723044347126053113}
+  - component: {fileID: 723044347126053063}
+  - component: {fileID: 723044347126053112}
+  m_Layer: 0
+  m_Name: CanvasManager_Gameplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &723044347126053113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723044347126053114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &723044347126053063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723044347126053114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7861a58fb1f57634c878b5d92b135492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer:
+    textTimer: {fileID: 0}
+    timerText: <color=#fff><size=150%>{0:00}</size></color>:<color=#fff><size=150%>{1:00}</size></color>:<size=70%>{2:00}</size>
+  stage:
+    textRoom: {fileID: 0}
+    textLevel: {fileID: 0}
+    textAnimation:
+      timeIntro: 0.25
+      timeStay: 2
+      timeExit: 0.5
+      colorTextLevel_Active: {r: 1, g: 1, b: 1, a: 1}
+      colorTextLevel_Inactive: {r: 0, g: 0, b: 0, a: 0}
+  life:
+    textHealth: {fileID: 0}
+    transformBox: {fileID: 0}
+  weapon:
+    image: {fileID: 0}
+  interaction:
+    item:
+      transformBox: {fileID: 0}
+      textName: {fileID: 0}
+      textDialogue: {fileID: 0}
+      imgFace: {fileID: 0}
+      timeChar: 0.05
+      isActive: 0
+      currentScrItem: {fileID: 0}
+    dialogue:
+      transformBox: {fileID: 0}
+      textName: {fileID: 0}
+      textDialogue: {fileID: 0}
+      imgBackground: {fileID: 0}
+      imgFace: {fileID: 0}
+      timeChar: 0.075
+      isActive: 0
+      currentScrNPC: {fileID: 0}
+      currentDialogue:
+        dataDialogue:
+          nameChar: ???
+          isCharacter: 1
+          dialogue: Texto de ejemplo.
+          face: {fileID: 0}
+        dataTime:
+          speedChar: 1
+          speedSpace: 0.5
+      currentIsCharacter: 0
+      currentNameChar: 
+      currentTextDialogue: 
+      currentFace: {fileID: 0}
+    checkpoint:
+      transformBox: {fileID: 0}
+      textName: {fileID: 0}
+      imgBackground: {fileID: 0}
+      imgFace: {fileID: 0}
+      isActive: 0
+      currentScrCheckpoint: {fileID: 0}
+  notification:
+    transformBox: {fileID: 0}
+    textName: {fileID: 0}
+  menu:
+    menuPause:
+      textName: {fileID: 0}
+      textTime: {fileID: 0}
+    menuDeath:
+      textName: {fileID: 0}
+      textTime: {fileID: 0}
+      textLevel: {fileID: 0}
+    menuCutscene:
+      textName: {fileID: 0}
+      textDesctiption: {fileID: 0}
+      image: {fileID: 0}
+      timeChar: 0.05
+--- !u!114 &723044347126053112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723044347126053114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e84612a62d443a4e82cf604f218544f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasData:
+  - nameCanvas: Interface
+    isCanvasMenu: 0
+    canvas: {fileID: 0}
+    anim: {fileID: 0}
+    data: {fileID: 0}
+  - nameCanvas: Menu
+    isCanvasMenu: 1
+    canvas: {fileID: 0}
+    anim: {fileID: 0}
+    data: {fileID: 11400000, guid: 8b4592728eeac084a8725b734e8cf2e9, type: 2}

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9149ba9dbbfa6394f8f9e37fb4f336ba, type: 3}
+  m_Name: Level 2 Room 2
+  m_EditorClassIdentifier: 
+  data:
+    stage: {fileID: 11400000, guid: bc680b55387e0384c89dea58014b72f0, type: 2}
+    name: Transition
+    hideRoom: 0
+  configuration:
+    idScene: 4
+    scenesString:
+    - Scene_Level2_2
+    - Scene_Level2_1
+    - Scene_Level2_3
+    scenes:
+    - Scene_Level2_2
+    - Scene_Level2_1
+    - Scene_Level2_3
+    sceneCurrent: {fileID: 102900000, guid: d450ab62eb40e7b4490fdfff04d43cb2, type: 3}
+    sceneToLoad:
+    - {fileID: 102900000, guid: cf21f923b220bc446840199566b3a65e, type: 3}
+    - {fileID: 102900000, guid: fb5be919f37040d42b76d9d0c081878a, type: 3}

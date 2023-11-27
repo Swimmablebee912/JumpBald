@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6799deb0118f86b4aa12fd89044b11a3, type: 3}
+  m_Name: Cutscene_Intro
+  m_EditorClassIdentifier: 
+  data:
+    name: Intro
+    diapositive:
+    - nameDiapositive: Intro
+      text: Around the world.
+      illustration: {fileID: 21300000, guid: 3471b37fe833a2e4f9ba77f0bb192638, type: 3}
+    - nameDiapositive: Intro
+      text: Around the world, there are the balds.
+      illustration: {fileID: 21300000, guid: d691773a900d57642b1ebf56af228843, type: 3}
+    - nameDiapositive: Intro
+      text: 'Beautiful and normal people.
+
+'
+      illustration: {fileID: 21300000, guid: b6ddd9bfe47fdf940bd9fcd284f981be, type: 3}
+    - nameDiapositive: Intro
+      text: A marginalized and ridiculed minority.
+      illustration: {fileID: 21300000, guid: aa6d5b8f73204864ba097749e80a1b2e, type: 3}
+    - nameDiapositive: Intro
+      text: But this ends here; it will no longer be tolerated.
+      illustration: {fileID: 21300000, guid: 90f738f1d663c3341a7adb2c53384b40, type: 3}
+  configuration:
+    ToNextScene: Gameplay
+    ToNextSubScreen: Interface

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SceneController.unity
+    guid: bb616b859b3e3c342af572313f9dd260
+  - enabled: 1
+    path: Assets/Scenes/Scene_Intro.unity
+    guid: af4ae5517ef9bbd4c81f08b017582316
+  - enabled: 1
+    path: Assets/Scenes/Scene_Loading.unity
+    guid: 467e80a68e58f354db3ad91edcbbc4e7
+  - enabled: 1
+    path: Assets/Scenes/Scene_MainMenu.unity
+    guid: 9a1307d8741885746a7f40a5f2eebf8b
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Gameplay.unity
+    guid: d408d46a150221a41b096d5c23d99e05
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level1_0.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level1_1.unity
+    guid: 2b98709427c404241946401abbaff158
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level1_2.unity
+    guid: 54292e5a68747084c9c32ff1a82e8a20
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level2_1.unity
+    guid: cf21f923b220bc446840199566b3a65e
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level2_2.unity
+    guid: d450ab62eb40e7b4490fdfff04d43cb2
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level2_3.unity
+    guid: fb5be919f37040d42b76d9d0c081878a
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level2_4.unity
+    guid: 3c38ca94e01491f44bd42fccb9548670
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Leve2_Extra_1_to_2_3.unity
+    guid: c99b26bb4989fbc419aa71fb3b2e7a52
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level3_1.unity
+    guid: 9061cb77a0a87ce459df80509cf97cd4
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level3_2.unity
+    guid: a9d8ff9eea2199e4d943f895ddd0e8d4
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level3_3.unity
+    guid: 85a441255c323fa4492d1b126e1d88cb
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene_Level3_Extra_2_to_2_1.unity
+    guid: 499a661f9ae2cb34993e02b3c1847c74
+  m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 89565bac863cd054298bfd4efd1d2bf6, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 2e98c0264a2854944b15a7ebb48a49f2, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 3880d701a73e7ad41ae5f588703f550d, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: f0ce2579b65153c4481d835b25fdc3ac, type: 2}
