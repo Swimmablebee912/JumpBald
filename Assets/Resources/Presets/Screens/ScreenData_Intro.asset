@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameScene: Intro
   sceneLoad: Scene_Intro
+  nameMusic: Stop
   objCanvas: {fileID: 1971526217277656714, guid: dc0c80df65f96b4429798515123c94ba, type: 3}
   subScenes:
   - name: Close

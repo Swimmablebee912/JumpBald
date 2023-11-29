@@ -29,6 +29,7 @@ public class Room : MonoBehaviour
         Player.main.System_gravity.SetCurrentRoom(data);
         CameraManager.main.SetCameraConfinder(confinder.bounds); 
         CheckObjects();
+        //if(data.data.stage.data.musicLevel!=null) { AudioManager.main.PlayMUSIC(data.data.stage.data.musicLevel); }
     }
 
     private void CheckObjects(){ 

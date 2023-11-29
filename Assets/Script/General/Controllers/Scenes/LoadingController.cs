@@ -16,18 +16,23 @@ public class LoadingController : MonoBehaviour
     [Header("Reference")]
     public Image image_Illustration;
     public TextMeshProUGUI text_Loading;
+    public GameObject objectButton;
 
-    private void Start() { ShowIllustration(); text_Loading.SetText("Loading"); }
+    private void Start() { 
+        AudioManager.main.PlayMUSIC("Stop");
+        ShowIllustration(); 
+        text_Loading.SetText("Loading"); 
+    }
 
     private void ShowIllustration() {
-        foreach(IllustrationToShow illustration in illustrations ) {
-            if (SceneLoaderManager.main.nextScene == illustration.nameScene) { image_Illustration.sprite = illustration.imageToLoad; return; }
-        }
+        objectButton.SetActive(true);
+        foreach(IllustrationToShow illustration in illustrations ) { if (SceneLoaderManager.main.nextScene == illustration.nameScene) { image_Illustration.sprite = illustration.imageToLoad; return; }  }
         image_Illustration.sprite = illustrations[0].imageToLoad;
+        objectButton.SetActive(false);
     }
-    public void ReadyToLoad(){ text_Loading.SetText("Loaded");   }
+    public void ReadyToLoad(){ text_Loading.SetText("Loaded");  AudioManager.main.PlaySFX("UI_Trigger_Menu_Option_PressNormal"); }
  
-    public void Function_Button_Loading(){  SceneLoaderManager.main.input_LoadAsyncEnd = true;  }
+    public void Function_Button_Loading(){ AudioManager.main.PlaySFX("UI_Trigger_Menu_Option_PressSpecial"); SceneLoaderManager.main.input_LoadAsyncEnd = true;  }
 
     [System.Serializable] public class IllustrationToShow{
         public string nameScene;

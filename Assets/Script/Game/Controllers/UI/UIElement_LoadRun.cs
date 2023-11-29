@@ -22,6 +22,9 @@ public class UIElement_LoadRun : MonoBehaviour
         loadedRun = dataSave!=null; 
 
         if(loadedRun) { 
+            
+            if(dataSave.currentRoom == null) { dataSave.currentRoom = MainMenuController.main.GetRoom(dataSave.idScene); }
+
             button.interactable = true; 
 
             textLevel.gameObject.SetActive(true);
@@ -63,7 +66,9 @@ public class UIElement_LoadRun : MonoBehaviour
     }
     public void PressButton_ToNewRun() { if(textInput.text!="") MainMenuController.main.Function_Button_toNewRun(textInput.text); }
 
-    public string GetLevel() { return dataSave.currentRoom.data.stage.data.name + " " + dataSave.currentRoom.GetIdRoom(); }
+    public string GetLevel() { 
+        return dataSave.currentRoom.data.stage.data.name + " " + dataSave.currentRoom.GetIdRoom();
+    }
     public string GetLife() { string text = ""; for(int i=1; i<=dataSave.lifeMax ;i++){ text += i<=dataSave.life?"<color=#fff><sprite=2></color>":"<sprite=3>"; } return text; }
     public string GetTimer() { return string.Format("{0}:{1}:{2}", Mathf.FloorToInt(dataSave.time / 60), Mathf.FloorToInt(dataSave.time % 60),  Mathf.FloorToInt((dataSave.time * 1000000) % 100)); }
 

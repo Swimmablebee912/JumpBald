@@ -15,15 +15,9 @@ MonoBehaviour:
   data:
     stage: {fileID: 11400000, guid: abeac25b2e5f99e42bc5bfb5cbcdd8c0, type: 2}
     name: Secret
-    hideRoom: 0
+    hideRoom: 1
   configuration:
     idScene: 11
-    scenesString:
-    - Scene_Level3_Extra_2_to_2_1
-    - Scene_Level3_1
     scenes:
     - Scene_Level3_Extra_2_to_2_1
     - Scene_Level3_1
-    sceneCurrent: {fileID: 102900000, guid: 499a661f9ae2cb34993e02b3c1847c74, type: 3}
-    sceneToLoad:
-    - {fileID: 102900000, guid: 9061cb77a0a87ce459df80509cf97cd4, type: 3}

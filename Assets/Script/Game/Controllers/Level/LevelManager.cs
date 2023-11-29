@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     public SystemRun systemRun;
     public SystemTimer systemTimer;
     public SystemInteract systemInteract;
+    public SystemData systemData;
 
     private void Start() { InInitial();  }
     private void FixedUpdate() { InFixed(); }
@@ -32,7 +33,10 @@ public class LevelManager : MonoBehaviour
     private void InFocus(bool inFocus) { if(inFocus) { systemRun.SaveRun(); } else {  } }
 
     private IEnumerator StartedCoroutine() {
+        
         systemRun.LoadRun(SaveLoadController.main.GetData_CurrentSave());
+        AudioManager.main.PlayMUSIC("Stop");
+
         if(systemRun.dataRun.positionWorld != Vector3.zero) { 
             SceneController.main.SetActiveScene(systemRun.dataRun.currentRoom);
             Player.main.System_state.dataRead.name = systemRun.dataRun.name; 
@@ -82,8 +86,13 @@ public class LevelManager : MonoBehaviour
         [Header("Reference Canvas")]
         public Animator anim;
 
-        public void Pause(bool state) { inPause = state; main.systemRun.ShowData_toPause(); }
-        public void Death(bool state) { inDeath = state; main.systemRun.ShowData_toDeath(); }
+        public void Spawn(){  AudioManager.main.PlaySFX("SFX_UI_Stinger_Gameplay_Spawn"); }
+        public void Pause(bool state) { 
+            inPause = state; main.systemRun.ShowData_toPause(); 
+            if(state) { AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Pause_On"); } 
+            else { AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Pause_Off"); }
+        }
+        public void Death(bool state) { inDeath = state; main.systemRun.ShowData_toDeath(); AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Death"); }
 
         public bool IsPlaying() { return !inPause && !inDeath; }
     }
@@ -94,13 +103,23 @@ public class LevelManager : MonoBehaviour
         public void ShowData_toPause() { if(dataRun!=null) CanvaManager.main.menu.menuPause.ShowData(dataRun.name, dataRun.time); }
 
         public void SaveRun() {
-            dataRun.name = Player.main.System_state.dataRead.name; 
+            dataRun.name = SaveLoadController.main.GetData_CurrentSave().name; 
             dataRun.life = Player.main.System_state.dataRead.health;
             dataRun.lifeMax =  Player.main.System_state.dataConfiguration.healthMax;
-            dataRun.achievements = Player.main.System_state.dataRead.achievements;
-            dataRun.weapons = Player.main.System_state.dataRead.weapons;
-            dataRun.checkpoints = Player.main.System_state.dataRead.checkpoints;
+            if(Player.main.System_state.dataRead.achievements!=null) { 
+                dataRun.achievements = new List<string>{}; 
+                foreach(DataAchievement data in Player.main.System_state.dataRead.achievements){ dataRun.achievements.Add(data.name); }
+            }
+            if(Player.main.System_state.dataRead.weapons!=null) { 
+                dataRun.weapons = new List<string>{}; 
+                foreach(DataWeapon data in Player.main.System_state.dataRead.weapons){ dataRun.weapons.Add(data.name); }
+            }
+            if(Player.main.System_state.dataRead.checkpoints!=null) { 
+                dataRun.checkpoints = new List<string>{}; 
+                foreach(DataCheckpoint data in Player.main.System_state.dataRead.checkpoints){ dataRun.checkpoints.Add(data.name); }
+            }
             dataRun.time = main.systemTimer.time;
+            dataRun.idScene = dataRun.currentRoom.configuration.idScene;
 
             SaveLoadController.main.Save(dataRun); 
         }
@@ -181,5 +200,14 @@ public class LevelManager : MonoBehaviour
         }
 
         public void ShowDiapositive() { CanvaManager.main.menu.menuCutscene.ShowData(currentData.data.diapositive[countId]); }
+    }
+    [System.Serializable] public class SystemData {
+        public List<DataAchievement> dataAchievement;
+        public List<DataWeapon> dataWeapons;
+        public List<DataCheckpoint> dataCheckpoints;
+
+        public DataAchievement GetAchievement(string name) { foreach(DataAchievement data in dataAchievement) { if(name==data.name) return data; } return null; }
+        public DataWeapon GetWeapon(string name) { foreach(DataWeapon data in dataWeapons) { if(name==data.name) return data; } return null; }
+        public DataCheckpoint GetCheckpoint(string name) { foreach(DataCheckpoint data in dataCheckpoints) { if(name==data.name) return data; } return null; }
     }
 }

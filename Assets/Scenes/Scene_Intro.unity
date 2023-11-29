@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 322339991}
   - component: {fileID: 322339990}
   - component: {fileID: 322339994}
+  - component: {fileID: 322339995}
   m_Layer: 5
   m_Name: '[Canvas] Intro'
   m_TagString: Untagged
@@ -246,6 +247,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &322339995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322339989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb99f6895421e04dbccef815ba827a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxClip:
+  - name: Screen_LogoStart
+    nameDataBase: Screen_LogoStart
+  - name: Screen_LogoStop
+    nameDataBase: Screen_LogoStop
 --- !u!4 &557078079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1971526217277656715, guid: dc0c80df65f96b4429798515123c94ba, type: 3}
@@ -296,6 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 921722334380742012}
+  anim: {fileID: 322339994}
   secondToClose: 1
   nextScreen: MainMenu
   withLoader: 0
@@ -831,23 +850,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!114 &921722333562848425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921722333562848430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeb99f6895421e04dbccef815ba827a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sfxClip:
-  - name: Screen_LogoStart
-    nameDataBase: Screen_LogoStart
-  - name: Screen_LogoStop
-    nameDataBase: Screen_LogoStop
 --- !u!1 &921722333562848430
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +859,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 921722333562848431}
-  - component: {fileID: 921722333562848425}
   m_Layer: 5
   m_Name: '[Content] Intro'
   m_TagString: Untagged

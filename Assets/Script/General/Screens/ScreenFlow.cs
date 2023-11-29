@@ -80,6 +80,7 @@ public class Screen_InGame {
         foreach(SubScenesData subSceneData in data.subScenes){
             if(subSceneData.name==subScene) {
                 if(subSceneData.canStopTime) { Time.timeScale=0; } else { Time.timeScale=1; }
+                break;
             } 
         }
     }

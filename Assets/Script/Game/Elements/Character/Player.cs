@@ -16,6 +16,7 @@ public class Player : Element
     public State System_state;
     public Gravity System_gravity;
     public Actions System_actions;
+    public Audio System_audio;
 
     public override void Initial(){ 
         System_state.Initial(this); System_gravity.Initial(this); System_actions.Initial(this); 
@@ -38,9 +39,20 @@ public class Player : Element
         System_state.dataRead.name = LevelManager.main.systemRun.dataRun.name; 
         System_state.dataRead.health = LevelManager.main.systemRun.dataRun.life; 
         System_state.dataConfiguration.healthMax = LevelManager.main.systemRun.dataRun.lifeMax;
-        System_state.dataRead.achievements = LevelManager.main.systemRun.dataRun.achievements;
-        System_state.dataRead.weapons = LevelManager.main.systemRun.dataRun.weapons;
-        System_state.dataRead.checkpoints = LevelManager.main.systemRun.dataRun.checkpoints;
+
+        if(LevelManager.main.systemRun.dataRun.achievements!=null) { 
+            System_state.dataRead.achievements  = new List<DataAchievement>{}; 
+            foreach(string data in LevelManager.main.systemRun.dataRun.achievements){  System_state.dataRead.achievements.Add(LevelManager.main.systemData.GetAchievement(data)); }
+        }
+        if(LevelManager.main.systemRun.dataRun.weapons!=null) { 
+            System_state.dataRead.weapons = new List<DataWeapon>{}; 
+            foreach(string data in LevelManager.main.systemRun.dataRun.weapons){ System_state.dataRead.weapons.Add(LevelManager.main.systemData.GetWeapon(data)); }
+        }
+        if(LevelManager.main.systemRun.dataRun.checkpoints!=null) { 
+            System_state.dataRead.checkpoints = new List<DataCheckpoint>{}; 
+            foreach(string data in LevelManager.main.systemRun.dataRun.checkpoints){ System_state.dataRead.checkpoints.Add(LevelManager.main.systemData.GetCheckpoint(data)); }
+        }
+
         System_gravity.dataRead.currentRoom = LevelManager.main.systemRun.dataRun.currentRoom;
         System_gravity.dataReference.pivot.position = LevelManager.main.systemRun.dataRun.positionWorld;
         LevelManager.main.systemTimer.time = LevelManager.main.systemRun.dataRun.time;
@@ -268,12 +280,15 @@ public class Player : Element
             }
             else { EffectManager.main.InstanceEffect("Dust_ContactLittle", dataRead.positionContact).SetDust("Normal").SetRotation(dataRead.angleCheckColl);  } 
 
+            if(Get_VectorIsSimilar( dataRead.directionContact, Vector2.down, 0.25f)) { scrPlayer.System_audio.PlaySFX("Contact"); }
+
             CameraManager.main.AddShake("Contact");
             EffectManager.main.InstanceEffect("PopUp", dataReference.pivotRoot.position).SetPopUp("Contact", TypePopUp.action); 
             
             dataRead.contactRoom = dataRead.currentRoom;
         }
         public void Action_Hit(Vector2 directionHit) { 
+            scrPlayer.System_audio.PlaySFX("Hit");
             dataReference.anim.SetTrigger("Hit");
             CameraManager.main.AddShake("Hit");
             EffectManager.main.InstanceEffect("PopUp", dataReference.pivot.position).SetPopUp("Hit", TypePopUp.action);
@@ -722,10 +737,12 @@ public class Player : Element
         public void Action_Deliz() {
             scrPlayer.System_gravity.Set_Velocity(-dataRead.directionAim * dataRead.magnitude * dataConfiguration.forceJump); 
             scrPlayer.System_gravity.Set_StateTurn(true);
+            scrPlayer.System_audio.PlaySFX("Jump");
             EffectManager.main.InstanceEffect("PopUp", dataReference.pivotRoot.position).SetPopUp("Jump", TypePopUp.action);
             EffectManager.main.InstanceEffect("Dust_Jump", scrPlayer.System_gravity.dataRead.positionContact).SetDust("Normal").SetRotation(dataRead.angleClamped); 
         }
         public void Action_TapAir() {
+            scrPlayer.System_audio.PlaySFX("JumpAir");
             switch(scrPlayer.System_state.GetWeapon().configuration.type) {
                 case DataWeapon.Configuration.TypeAction.None: 
                     EffectManager.main.InstanceEffect("PopUp", dataReference.pivotRoot.position).SetPopUp("None", TypePopUp.action);
@@ -755,13 +772,14 @@ public class Player : Element
             // else { scrPlayer.System_state.ChangeWeapon(1); }
         }
 
-        public void Action_Interact() { dataRead.interact.Action_Interact();  }
+        public void Action_Interact() { scrPlayer.System_audio.PlaySFX("Interact"); dataRead.interact.Action_Interact();  }
         public void Action_ChangeWeapon() { scrPlayer.System_state.ChangeWeapon(1); }
 
         public void Action_Spawn() { 
             dataReference.pivotRoot.position = scrPlayer.System_state.LoadCheckpoint(); 
             scrPlayer.System_state.RestoreHealth();
             scrPlayer.System_gravity.Set_Velocity(Vector2.up*10);
+            LevelManager.main.systemManager.Spawn();
         }
         public void Action_Death() { 
             if (dataRead.interact!=null) { 
@@ -779,6 +797,7 @@ public class Player : Element
                 scrPlayer.System_state.ModifyHealth(-1); 
                 scrPlayer.System_gravity.Action_Hit(Vector2.zero);
             }
+            scrPlayer.System_audio.PlaySFX("Hit");
             dataReference.anim.SetTrigger("Hit"); 
             EffectManager.main.InstanceEffect("Dust_Hit", dataReference.pivotRoot.position).SetDust("Normal"); 
             CameraManager.main.AddShake("Hit");
@@ -860,5 +879,11 @@ public class Player : Element
             public Interactable interact;
             
         }
+    }
+    [System.Serializable] public class Audio {
+        [Header("Reference")]
+        public AudioObject_ToOwnSource scrAudio;
+
+        public void PlaySFX(string clip) { scrAudio.PlaySFX(clip); }
     }
 }

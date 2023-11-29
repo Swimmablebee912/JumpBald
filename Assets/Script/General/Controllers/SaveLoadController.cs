@@ -15,7 +15,7 @@ public class SaveLoadController : MonoBehaviour
 
     [Header("Read")] 
     public Runs data;
-    private RunData currentRun;
+    public RunData currentRun;
 
     public List<RunData> GetRuns() { data = Load(); return data.dataList;   }
 
@@ -97,12 +97,13 @@ public class SaveLoadController : MonoBehaviour
     [Header("About Character")]
     public string name = "Unnamed";
     public int life = 3; public int lifeMax = 3;
-    public List<DataAchievement> achievements = null;
-    public List<DataWeapon> weapons = null;
-    public List<DataCheckpoint> checkpoints = null;
+    public List<string> achievements = null;
+    public List<string> weapons = null;
+    public List<string> checkpoints = null;
 
     [Header("About Stage")]
     public DataRoom currentRoom = null;
+    public int idScene = 0;
     public Vector3 positionWorld = Vector3.zero;
 
     [Header("About Game")]
@@ -123,9 +124,9 @@ public class SaveLoadController : MonoBehaviour
     public void SetData_Name(string newValue) { name = newValue; }
     public void SetData_Life(int newValue) { life = newValue; }
     public void SetData_LifeMax(int newValue) { lifeMax = newValue; }
-    public void SetData_Achievement(List<DataAchievement> newValue) { achievements = newValue; }
-    public void SetData_Weapon(List<DataWeapon> newValue) { weapons = newValue; }
-    public void SetData_Checkpoint(List<DataCheckpoint> newValue) { checkpoints = newValue; }
+    public void SetData_Achievement(List<string> newValue) { achievements = newValue; }
+    public void SetData_Weapon(List<string> newValue) { weapons = newValue; }
+    public void SetData_Checkpoint(List<string> newValue) { checkpoints = newValue; }
     public void SetData_Room(DataRoom newValue) { currentRoom = newValue; }
     public void SetData_PositionWorld(Vector3 newValue) { positionWorld = newValue; }
     public void SetData_Time(float newValue) { time = newValue; }

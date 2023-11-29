@@ -8,6 +8,7 @@ public class MainMenuController : MonoBehaviour
 
     [Header("Reference")]
     public List<UIElement_LoadRun> uIElement_LoadRun;
+    public List<DataRoom> datarooms;
 
     public void Function_Button_toNewRun(string nameRun) { SaveLoadController.main.SetData_CurrentSave(new RunData{ name = nameRun }); GameManager.main.system_GameFlow.ChangeScene("Gameplay"); }
     public void Function_Button_toLoadRun(RunData toLoad) { SaveLoadController.main.SetData_CurrentSave(toLoad); GameManager.main.system_GameFlow.ChangeScene("Gameplay"); }
@@ -18,6 +19,9 @@ public class MainMenuController : MonoBehaviour
     public void Function_Button_toOptions () {  GameManager.main.system_GameFlow.ChangeSubScene("Options"); }
     public void Function_Button_toCredits () {  GameManager.main.system_GameFlow.ChangeSubScene("Credits"); }
 
+    private void Start(){
+        AudioManager.main.PlayMUSIC("MainMenu");
+    }
     public void LoadData() {
         List<RunData> dataSave = SaveLoadController.main.GetRuns();
         if(dataSave!=null) {
@@ -29,4 +33,6 @@ public class MainMenuController : MonoBehaviour
             }
         }
     }
+
+    public DataRoom GetRoom(int id) { foreach(DataRoom dataroom in datarooms) { if(dataroom.configuration.idScene == id) { return dataroom; } } return datarooms[0]; }
 }

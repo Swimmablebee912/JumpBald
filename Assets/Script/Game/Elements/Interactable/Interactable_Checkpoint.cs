@@ -52,9 +52,16 @@ public class Interactable_Checkpoint : Interactable
             if(isCurrent) { 
                 if(Player.main.System_state.dataRead.health<Player.main.System_state.dataConfiguration.healthMax) { 
                     CanvaManager.main.notification.ShowNotification("Rest Bonfire", 2);
+                    AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_Checkpoint_Restore");
                 } else {
-                    if (Player.main.System_state.ChangeCheckpoint(1)) CanvaManager.main.notification.ShowNotification("Travel Bonfire", 2);
-                    else { CanvaManager.main.notification.ShowNotification("Rest Bonfire", 2); }
+                    if (Player.main.System_state.ChangeCheckpoint(1)) {
+                        CanvaManager.main.notification.ShowNotification("Travel Bonfire", 2);
+                        AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_Checkpoint_Travel");
+                    }
+                    else { 
+                        CanvaManager.main.notification.ShowNotification("Rest Bonfire", 2); 
+                        AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_Checkpoint_Restore");
+                    }
                 }
             } 
             else {
@@ -62,6 +69,7 @@ public class Interactable_Checkpoint : Interactable
                 if (!isActive) Player.main.System_state.Add_Achievement(achievementToAdd);
                 Player.main.System_state.SetCheckpoint( data );
                 CanvaManager.main.notification.ShowNotification("Rest Bonfire", 2);
+                AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_Checkpoint_Restore");
                 CheckState(); CheckCurrent();
                 LevelManager.main.systemInteract.systemCheckpoint.Set_CheckpointInteract(scrCheckpoint);
             }

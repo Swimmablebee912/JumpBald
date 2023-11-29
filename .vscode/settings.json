@@ -52,5 +52,5 @@
         "Temp/": true
     },
     "dotnet.preferCSharpExtension": true,
-    "dotnet.defaultSolution": "SymboProject_JamGitHub.sln"
+    "dotnet.defaultSolution": "JumpBald.sln"
 }

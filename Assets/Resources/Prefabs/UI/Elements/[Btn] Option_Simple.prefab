@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3118622035013695943}
   - component: {fileID: -7689935855378454250}
   - component: {fileID: 4768290403183464442}
+  - component: {fileID: 4831041216213361207}
   m_Layer: 5
   m_Name: '[Btn] Option_Simple'
   m_TagString: Untagged
@@ -123,7 +124,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3118622035013695936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4831041216213361207}
+        m_TargetAssemblyTypeName: AudioObject_ToMainSources, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Press
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-7689935855378454250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +167,21 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: -5, y: -5}
   m_UseGraphicAlpha: 1
+--- !u!114 &4831041216213361207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118622035013695941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb99f6895421e04dbccef815ba827a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxClip:
+  - name: Press
+    nameDataBase: UI_Trigger_Menu_Option_PressNormal
 --- !u!1 &3118622035678133106
 GameObject:
   m_ObjectHideFlags: 0

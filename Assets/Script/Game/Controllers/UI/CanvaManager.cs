@@ -97,6 +97,7 @@ public class CanvaManager : MonoBehaviour
             private void ShowBoxItem(bool show) {
                 transformBox.DOKill(false);
                 if(show) {
+                    AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_General_Show");
                     transformBox.gameObject.SetActive(true);
                     transformBox.DOScale(Vector3.one, 0.1f);
                 } else {
@@ -105,6 +106,7 @@ public class CanvaManager : MonoBehaviour
             }
             private void ShowActive(bool isActive) { 
                 if(isActive) { 
+                    
                     imgBackground.color=Color.white;
                     textName.color=Color.black;
                 }
@@ -161,6 +163,7 @@ public class CanvaManager : MonoBehaviour
             private void ShowBoxItem(bool show) {
                 transformBox.DOKill(false);
                 if(show) {
+                    AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_General_Show");
                     transformBox.gameObject.SetActive(true);
                     transformBox.DOScale(Vector3.one, 0.1f);
                 } else {
@@ -170,7 +173,8 @@ public class CanvaManager : MonoBehaviour
 
             private void ShowName(string nameChar) { textName.SetText(nameChar); }
             private void ShowTextDescription(string dialogue) { 
-                textCoroutine = CanvaManager.main.StartCoroutine(WriteText(dialogue));
+                textDialogue.SetText(dialogue);
+                // textCoroutine = CanvaManager.main.StartCoroutine(WriteText(dialogue));
             } 
             private Coroutine textCoroutine;
             IEnumerator WriteText(string text) { 
@@ -221,6 +225,7 @@ public class CanvaManager : MonoBehaviour
             private void ShowBoxDialogue(bool show) {
                 transformBox.DOKill(false);
                 if(show) {
+                    AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_General_Show");
                     transformBox.gameObject.SetActive(true);
                     transformBox.DOScale(Vector3.one, 0.1f);
                 } else {
@@ -251,8 +256,10 @@ public class CanvaManager : MonoBehaviour
                 string textWritter = ""; textDialogue.SetText("");
                 foreach (char c in text) {
                     textWritter += c; textDialogue.SetText(textWritter);
+                    if(!char.IsWhiteSpace(c)) AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_Dialogue_Count");
                     yield return new WaitForSeconds(timeChar * (char.IsWhiteSpace(c) ? currentDialogue.dataTime.speedChar : currentDialogue.dataTime.speedChar));
                 }
+                AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_Dialogue_End");
             }
             private void ShowFace( Sprite spr) { imgFace.sprite = spr; }
         }
@@ -263,6 +270,7 @@ public class CanvaManager : MonoBehaviour
         public TextMeshProUGUI textName;
 
         public void ShowNotification(string text, float timer) {
+            AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Notification_On");
             transformBox.DOKill(false);
             transformBox.localScale=new Vector3(1,0,1);
             transformBox.gameObject.SetActive(true);
@@ -322,8 +330,10 @@ public class CanvaManager : MonoBehaviour
                 string textWritter = ""; textDesctiption.SetText("");
                 foreach (char c in text) {
                     textWritter += c; textDesctiption.SetText(textWritter);
+                    if(c!=' '){ AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_Dialogue_Count"); }
                     yield return new WaitForSecondsRealtime(timeChar);
                 }
+                AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_Dialogue_End");
             }
         }   
     }

@@ -15,6 +15,7 @@ MonoBehaviour:
   data:
     name: Forest Pit
     description: Castle's refuse pit among the trees in the expansive forest.
+    musicLevel: 
   configuration:
     rooms:
     - {fileID: 11400000, guid: d5d0526fb1bab7349ae8c94a7be43669, type: 2}

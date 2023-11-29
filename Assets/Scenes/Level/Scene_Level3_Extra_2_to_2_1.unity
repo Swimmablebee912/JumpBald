@@ -156,19 +156,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
-      value: 0.44
+      value: 0.65999997
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.x
-      value: 0.42
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.y
-      value: 0.48999998
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.z
-      value: 0.39999998
+      value: 0.59999996
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -197,11 +197,23 @@ PrefabInstance:
     - target: {fileID: 3503408519675505245, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -485248863, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+      objectReference: {fileID: -766190466, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: noUse_InStun
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBase
+      value: 
+      objectReference: {fileID: -1732790172, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBounce
+      value: 
+      objectReference: {fileID: -766190466, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprDamage
+      value: 
+      objectReference: {fileID: -361528755, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.movement.loop
       value: 1
@@ -222,6 +234,10 @@ PrefabInstance:
       propertyPath: systemSelf.movement.speedMove
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBaseEffector
+      value: 
+      objectReference: {fileID: -1042188009, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.collision.isTrigger
       value: 1
@@ -483,7 +499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Size.y
-      value: 0.49999988
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Enabled
@@ -499,19 +515,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
-      value: 0.47
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.x
-      value: 0.45999998
+      value: 0.59999996
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.y
-      value: 0.47
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.z
-      value: 0.47
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -519,7 +535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 1.28
+      value: 1.9200001
       objectReference: {fileID: 0}
     - target: {fileID: 3503408519675505242, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -535,16 +551,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503408519675505245, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Size.y
-      value: 1.28
+      value: 1.9200001
       objectReference: {fileID: 0}
     - target: {fileID: 3503408519675505245, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1880880163, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+      objectReference: {fileID: -361528755, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: noUse_InStun
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBase
+      value: 
+      objectReference: {fileID: -1732790172, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBounce
+      value: 
+      objectReference: {fileID: -766190466, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprDamage
+      value: 
+      objectReference: {fileID: -361528755, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.movement.loop
       value: 1
@@ -561,6 +589,10 @@ PrefabInstance:
       propertyPath: systemContacts.offsetSprite.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBaseEffector
+      value: 
+      objectReference: {fileID: -1042188009, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.collision.isTrigger
       value: 1
@@ -583,11 +615,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.movement.positionInitial.x
-      value: -22.66
+      value: -22.9
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.movement.positionInitial.y
-      value: 167.31
+      value: 167.5
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.movement.positionInitial.z
@@ -619,7 +651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemContacts.collisionInteract.size.y
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemExternal.collisionInteract.size.x
@@ -627,7 +659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemExternal.collisionInteract.size.y
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.collision.isEffectorPlattform
@@ -683,7 +715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287859, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 167.5
+      value: 167.37
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287859, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -765,19 +797,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
-      value: 0.47
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.x
-      value: 0.45999998
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.y
-      value: 0.47
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.z
-      value: 0.47
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -806,11 +838,23 @@ PrefabInstance:
     - target: {fileID: 3503408519675505245, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1880880163, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+      objectReference: {fileID: -361528755, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: noUse_InStun
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBase
+      value: 
+      objectReference: {fileID: -1732790172, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBounce
+      value: 
+      objectReference: {fileID: -766190466, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprDamage
+      value: 
+      objectReference: {fileID: -361528755, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.movement.loop
       value: 1
@@ -827,6 +871,10 @@ PrefabInstance:
       propertyPath: systemSelf.movement.speedMove
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBaseEffector
+      value: 
+      objectReference: {fileID: -1042188009, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.collision.isTrigger
       value: 1
@@ -1112,27 +1160,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
-      value: 0.47
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.x
-      value: 0.45999998
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.y
-      value: 0.47
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.z
-      value: 0.47
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.96
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 2.8799999
+      value: 3.1999998
       objectReference: {fileID: 0}
     - target: {fileID: 3503408519675505242, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1153,11 +1201,23 @@ PrefabInstance:
     - target: {fileID: 3503408519675505245, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1880880163, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+      objectReference: {fileID: -361528755, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: noUse_InStun
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBase
+      value: 
+      objectReference: {fileID: -1732790172, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBounce
+      value: 
+      objectReference: {fileID: -766190466, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprDamage
+      value: 
+      objectReference: {fileID: -361528755, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.movement.loop
       value: 1
@@ -1178,6 +1238,10 @@ PrefabInstance:
       propertyPath: systemContacts.offsetSprite.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBaseEffector
+      value: 
+      objectReference: {fileID: -1042188009, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.collision.isTrigger
       value: 1
@@ -1370,7 +1434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Size.y
-      value: 0.49999988
+      value: 1.4599999
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Enabled
@@ -1385,12 +1449,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0.59999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 5.7599998
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 0.9599999
+      value: 1.92
       objectReference: {fileID: 0}
     - target: {fileID: 3503408519675505242, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1406,16 +1486,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503408519675505245, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Size.y
-      value: 0.9599999
+      value: 1.92
       objectReference: {fileID: 0}
     - target: {fileID: 3503408519675505245, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1236850600, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+      objectReference: {fileID: -1042188009, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBase
+      value: 
+      objectReference: {fileID: -1732790172, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBounce
+      value: 
+      objectReference: {fileID: -766190466, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprDamage
+      value: 
+      objectReference: {fileID: -361528755, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemContacts.offsetSprite.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBaseEffector
+      value: 
+      objectReference: {fileID: -1042188009, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.collision.isTrigger
       value: 0
@@ -1426,11 +1522,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.movement.positionInitial.x
-      value: -17.14
+      value: -16.39
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.movement.positionInitial.y
-      value: 171.92
+      value: 171.52
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemContacts.collisionInteract.angle
@@ -1450,7 +1546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemContacts.collisionInteract.size.y
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemExternal.collisionInteract.size.x
@@ -1458,7 +1554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemExternal.collisionInteract.size.y
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.collision.isEffectorPlattform
@@ -1486,7 +1582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287859, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 171.45
+      value: 171.52
       objectReference: {fileID: 0}
     - target: {fileID: 3503408520107287859, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1572,27 +1668,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
-      value: 0.44
+      value: 0.65999997
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.x
-      value: 0.42
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.y
-      value: 0.48999998
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.border.z
-      value: 0.39999998
+      value: 0.59999996
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 2.24
+      value: 2.31
       objectReference: {fileID: 0}
     - target: {fileID: 1395745503, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 7.68
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3503408519675505242, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1613,11 +1709,23 @@ PrefabInstance:
     - target: {fileID: 3503408519675505245, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -485248863, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+      objectReference: {fileID: -766190466, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: noUse_InStun
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBase
+      value: 
+      objectReference: {fileID: -1732790172, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBounce
+      value: 
+      objectReference: {fileID: -766190466, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprDamage
+      value: 
+      objectReference: {fileID: -361528755, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.movement.loop
       value: 1
@@ -1642,6 +1750,10 @@ PrefabInstance:
       propertyPath: systemSelf.movement.speedMove
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
+      propertyPath: systemExternal.sprBaseEffector
+      value: 
+      objectReference: {fileID: -1042188009, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     - target: {fileID: 3503408520107287856, guid: ced1b77a65ad3d449aac9d31faf190a3, type: 3}
       propertyPath: systemSelf.collision.isTrigger
       value: 1

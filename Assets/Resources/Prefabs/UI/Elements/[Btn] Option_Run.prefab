@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: -7689935855378454250}
   - component: {fileID: 4768290403183464442}
   - component: {fileID: 6929963760992481232}
+  - component: {fileID: 9159582163371303904}
   m_Layer: 5
   m_Name: '[Btn] Option_Run'
   m_TagString: Untagged
@@ -278,6 +279,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 9159582163371303904}
+        m_TargetAssemblyTypeName: AudioObject_ToMainSources, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Press
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-7689935855378454250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,6 +340,21 @@ MonoBehaviour:
   textInput: {fileID: 7610303296295510783}
   button: {fileID: 3118622035013695943}
   loadedRun: 0
+--- !u!114 &9159582163371303904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118622035013695941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb99f6895421e04dbccef815ba827a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxClip:
+  - name: Press
+    nameDataBase: UI_Trigger_Menu_Option_PressSpecial
 --- !u!1 &3118622035678133106
 GameObject:
   m_ObjectHideFlags: 0

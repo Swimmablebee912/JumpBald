@@ -1049,6 +1049,7 @@ MonoBehaviour:
     imageToLoad: {fileID: 21300000, guid: 067b78b6ccbb8c847b76ace1d1892c9a, type: 3}
   image_Illustration: {fileID: 1180487204}
   text_Loading: {fileID: 1098439456}
+  objectButton: {fileID: 1929808104}
 --- !u!1 &1821581020
 GameObject:
   m_ObjectHideFlags: 0

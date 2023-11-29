@@ -15,6 +15,7 @@ MonoBehaviour:
   data:
     name: Castle Gate
     description: The majestic entrance to the castle, guarded by challenging traps
+    musicLevel: 
   configuration:
     rooms:
     - {fileID: 11400000, guid: b37508c3b4f8cac4ca519ea0b91f472a, type: 2}

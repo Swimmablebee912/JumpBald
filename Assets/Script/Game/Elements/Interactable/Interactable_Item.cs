@@ -40,6 +40,8 @@ public class Interactable_Item : Interactable
             if(weapon!=null) {  Player.main.System_state.Add_Weapon(weapon); }
 
             if(anim!=null) anim.SetTrigger("Interact");
+
+            AudioManager.main.PlaySFX("UI_Trigger_Gameplay_Interactable_Item_Take");
         }
     }
 }

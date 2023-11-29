@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825313525}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.020000003, y: 0, z: 0}
+  m_LocalPosition: {x: 0.059, y: 0, z: 0}
   m_LocalScale: {x: 0.45, y: 0.45, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -186,7 +186,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.32, y: 0.5, z: 0.32, w: 0.39999998}
+    border: {x: 0.68, y: 0.66999996, z: 0.68, w: 0.66999996}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.6, y: 1.6}
     newSize: {x: 1.6999999, y: 1.6999999}
@@ -274,6 +274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrThis: {fileID: 0}
+  noUse_InStun: 0
+  reset_InIntro: 0
   isActivated: 0
   systemContacts:
     scrElement: {fileID: 0}
@@ -292,6 +294,7 @@ MonoBehaviour:
       directionContact: {x: 0, y: 0}
     spr: {fileID: 3503408519675505245}
     pivotSpr: {fileID: 3503408519675505242}
+    offsetSprite: {x: 0.32, y: 0.32}
     shakeDuration: 0.75
     shakeIntensity: 0.125
     inContact: 0
@@ -304,6 +307,19 @@ MonoBehaviour:
     sprBaseEffector: {fileID: 1236850600, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     sprDamage: {fileID: 1880880163, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
     sprBounce: {fileID: -485248863, guid: c3c05f6176ecddf44b93b96184178851, type: 3}
+    copyContact: 1
+    collisionInteract:
+      pivotCollision: {fileID: 0}
+      offset: {x: 0, y: 0, z: 0}
+      size: {x: 0, y: 0}
+      angle: 0
+      groundLayer:
+        serializedVersion: 2
+        m_Bits: 0
+      inContact: 0
+      coll: {fileID: 0}
+      directionContact: {x: 0, y: 0}
+    inContact: 0
     test_scrObstacle: {fileID: 3503408520107287856}
     damage:
       scrElement: {fileID: 0}
@@ -311,6 +327,7 @@ MonoBehaviour:
       isActivated: 0
       canDamage: 0
       timeToDamage: 2
+      applyStay: 1
       time: 0
     bounce:
       scrElement: {fileID: 0}
@@ -322,7 +339,10 @@ MonoBehaviour:
       directionInitial: {x: 0, y: 0}
       forceBounce: 1
       speedAngleRotated: 1
+      timeToBounce: 0.5
+      applyStay: 1
       angleBounce: 0
+      time: 0
   systemSelf:
     scrElement: {fileID: 0}
     scrObstacle: {fileID: 0}
@@ -343,6 +363,7 @@ MonoBehaviour:
         coll: {fileID: 0}
         directionContact: {x: 0, y: 0}
       activeIn: 0
+      timeEnabled: 1
       timeActivated: 1
       isEnabled: 0
       inContact: 0

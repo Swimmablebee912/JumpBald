@@ -8,7 +8,6 @@ public class ScreenData : ScriptableObject{
     public string sceneLoad;
     public GameObject objCanvas;
     public SubScenesData[] subScenes;
-    
 }
 
 [System.Serializable] public class SubScenesData{
