@@ -48,7 +48,7 @@ public class UIElement_LoadRun : MonoBehaviour
                 textTitle.gameObject.SetActive(false);
                 textInput.gameObject.SetActive(true);
 
-                textInput.placeholder.GetComponent<TextMeshProUGUI>().text =  "New Run";
+                //textInput.placeholder.GetComponent<TextMeshProUGUI>().text =  "New Run";
             } else {
                 button.interactable = false; 
 
@@ -62,7 +62,7 @@ public class UIElement_LoadRun : MonoBehaviour
 
     public void PressButton() {
         if(loadedRun) { MainMenuController.main.Function_Button_toLoadRun(dataSave); }
-        else {   }
+        else {  }
     }
     public void PressButton_ToNewRun() { if(textInput.text!="") MainMenuController.main.Function_Button_toNewRun(textInput.text); }
 

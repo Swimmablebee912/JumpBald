@@ -19,41 +19,58 @@ MonoBehaviour:
   configuration:
     dialogues:
     - dataDialogue:
-        nameChar: Blacksmith
+        nameChar: Tim
         isCharacter: 1
-        dialogue: Hey
+        dialogue: Twinkle, twinkle... Oh. Now I can't, I'm in a hurr...
         face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
       dataTime:
         speedChar: 0.75
         speedSpace: 0.75
     - dataDialogue:
-        nameChar: Blacksmith
+        nameChar: Tim
         isCharacter: 1
-        dialogue: (Complete)
+        dialogue: Tim, how...? Ah, do you know my brother... Where...?
         face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
       dataTime:
         speedChar: 0.75
         speedSpace: 0.75
     - dataDialogue:
-        nameChar: Blacksmith
+        nameChar: Tim
         isCharacter: 1
-        dialogue: (Complete)
+        dialogue: Oh yes, I got distracted for a second climbing, and I lost sight
+          of him.
         face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
       dataTime:
         speedChar: 0.75
         speedSpace: 0.75
     - dataDialogue:
-        nameChar: Blacksmith
+        nameChar: Tim
         isCharacter: 1
-        dialogue: (Complete)
+        dialogue: Thinking about that scoundrel, and I lose my way...
         face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
       dataTime:
         speedChar: 0.75
         speedSpace: 0.75
     - dataDialogue:
-        nameChar: Blacksmith
+        nameChar: Tim
         isCharacter: 1
-        dialogue: Jojo.
+        dialogue: Twinkle, twinkle... Twinkle, twinkle... Oh, his sword!
+        face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
+      dataTime:
+        speedChar: 0.75
+        speedSpace: 0.75
+    - dataDialogue:
+        nameChar: Tim
+        isCharacter: 1
+        dialogue: I think I'll go help him...
+        face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
+      dataTime:
+        speedChar: 0.75
+        speedSpace: 0.75
+    - dataDialogue:
+        nameChar: Tim
+        isCharacter: 1
+        dialogue: You can use my hammer; it'll help you climb...
         face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
       dataTime:
         speedChar: 0.75

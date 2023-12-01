@@ -199,7 +199,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -170.00003, y: -10}
+  m_AnchoredPosition: {x: -170.00006, y: -10}
   m_SizeDelta: {x: -379.99997, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &35300735
@@ -1076,7 +1076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -170.00003, y: -10}
+  m_AnchoredPosition: {x: -170.00006, y: -10}
   m_SizeDelta: {x: -379.99997, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &208346593
@@ -2191,7 +2191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -175.00003, y: -70}
+  m_AnchoredPosition: {x: -175.00006, y: -70}
   m_SizeDelta: {x: -410, y: -140}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &311702632
@@ -3307,7 +3307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 32.000183, y: 160}
+  m_AnchoredPosition: {x: 32.000175, y: 160}
   m_SizeDelta: {x: -140, y: 100}
   m_Pivot: {x: 0.2, y: 0.5}
 --- !u!114 &601462344
@@ -4583,7 +4583,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -175.00003, y: -70}
+  m_AnchoredPosition: {x: -175.00006, y: -70}
   m_SizeDelta: {x: -410, y: -100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &955423200
@@ -6294,7 +6294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3118622035678133100, guid: 5a19a4cafdd167f4bb1dfc5856f5a781, type: 3}
       propertyPath: m_text
-      value: Retry <sprite=19>
+      value: Retry
       objectReference: {fileID: 0}
     - target: {fileID: 3118622035678133106, guid: 5a19a4cafdd167f4bb1dfc5856f5a781, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6747,7 +6747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -87.50003, y: -20}
+  m_AnchoredPosition: {x: -87.50006, y: -20}
   m_SizeDelta: {x: -225, y: 180}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1427681871
@@ -7776,7 +7776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3118622035678133100, guid: 5a19a4cafdd167f4bb1dfc5856f5a781, type: 3}
       propertyPath: m_text
-      value: Retry <sprite=19>
+      value: 'Retry '
       objectReference: {fileID: 0}
     - target: {fileID: 3118622035678133106, guid: 5a19a4cafdd167f4bb1dfc5856f5a781, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8018,7 +8018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3118622035678133100, guid: 5a19a4cafdd167f4bb1dfc5856f5a781, type: 3}
       propertyPath: m_text
-      value: Revive <sprite=19>
+      value: Revive
       objectReference: {fileID: 0}
     - target: {fileID: 3118622035678133106, guid: 5a19a4cafdd167f4bb1dfc5856f5a781, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8220,7 +8220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -87.50003, y: -20}
+  m_AnchoredPosition: {x: -87.50006, y: -20}
   m_SizeDelta: {x: -225, y: 400}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1772107544
@@ -8405,7 +8405,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -87.50003, y: -20}
+  m_AnchoredPosition: {x: -87.50006, y: -20}
   m_SizeDelta: {x: -225, y: 340}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1799688660

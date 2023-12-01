@@ -44,8 +44,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 480
   defaultScreenHeight: 854
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 720
+  defaultScreenHeightWeb: 720
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -76,7 +76,7 @@ PlayerSettings:
   androidFullscreenMode: 3
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 1
+  runInBackground: 0
   captureSingleScreen: 1
   muteOtherAudioSources: 1
   Prepare IOS For Recording: 0
@@ -135,7 +135,9 @@ PlayerSettings:
     16:9: 0
     Others: 1
   bundleVersion: .25
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 89565bac863cd054298bfd4efd1d2bf6, type: 2}
+  - {fileID: 11400000, guid: 3880d701a73e7ad41ae5f588703f550d, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -144,7 +146,7 @@ PlayerSettings:
   vrSettings:
     enable360StereoCapture: 0
   isWsaHolographicRemotingEnabled: 0
-  enableFrameTimingStats: 1
+  enableFrameTimingStats: 0
   enableOpenGLProfilerGPURecorders: 0
   useHDRDisplay: 0
   D3DHDRBitDepth: 0
@@ -423,9 +425,14 @@ PlayerSettings:
     Android: 1
     iPhone: 1
     tvOS: 1
-  m_BuildTargetGroupLightmapEncodingQuality: []
+  m_BuildTargetGroupLightmapEncodingQuality:
+  - m_BuildTarget: WebGL
+    m_EncodingQuality: 0
   m_BuildTargetGroupLightmapSettings:
   - m_BuildTarget: Standalone
+    m_TextureStreamingEnabled: 0
+    m_TextureStreamingPriority: 0
+  - m_BuildTarget: WebGL
     m_TextureStreamingEnabled: 0
     m_TextureStreamingPriority: 0
   m_BuildTargetNormalMapEncoding: []
@@ -661,9 +668,9 @@ PlayerSettings:
   ps4IncludedModules: []
   ps4attribVROutputEnabled: 0
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 3c337c8a32f1b824e8a4fbdee46b56ba, type: 3}
+  splashScreenBackgroundSourceLandscape: {fileID: 0}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
-  blurSplashScreenBackground: 1
+  blurSplashScreenBackground: 0
   spritePackerPolicy: 
   webGLMemorySize: 32
   webGLExceptionSupport: 1
@@ -672,7 +679,7 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: APPLICATION:Minimal
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 0

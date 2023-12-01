@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 1347053195}
   - component: {fileID: 1347053196}
   m_Layer: 0
-  m_Name: Extra_ResetTimer
+  m_Name: Extra_PauseTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

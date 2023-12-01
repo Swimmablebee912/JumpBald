@@ -21,7 +21,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Knight
         isCharacter: 1
-        dialogue: Hey
+        dialogue: Aaaggh... Oh...
         face: {fileID: 21300000, guid: 310e27d11e2443548a377fc74192a68f, type: 3}
       dataTime:
         speedChar: 0.75
@@ -29,7 +29,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Knight
         isCharacter: 1
-        dialogue: (Complete)
+        dialogue: Be careful on these ascents, Aghh...
         face: {fileID: 21300000, guid: 310e27d11e2443548a377fc74192a68f, type: 3}
       dataTime:
         speedChar: 0.75
@@ -37,7 +37,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Knight
         isCharacter: 1
-        dialogue: (Complete)
+        dialogue: A bit further up, there's a blacksmith...
         face: {fileID: 21300000, guid: 310e27d11e2443548a377fc74192a68f, type: 3}
       dataTime:
         speedChar: 0.75
@@ -45,7 +45,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Knight
         isCharacter: 1
-        dialogue: (Complete)
+        dialogue: That bastard... Don't think he'll be of much help..
         face: {fileID: 21300000, guid: 310e27d11e2443548a377fc74192a68f, type: 3}
       dataTime:
         speedChar: 0.75
@@ -53,7 +53,23 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Knight
         isCharacter: 1
-        dialogue: Jiji... ji
+        dialogue: I asked him to... Ouch ouch ts
+        face: {fileID: 21300000, guid: 310e27d11e2443548a377fc74192a68f, type: 3}
+      dataTime:
+        speedChar: 0.75
+        speedSpace: 0.75
+    - dataDialogue:
+        nameChar: Knight
+        isCharacter: 1
+        dialogue: Asked for his help, and this is what I got...
+        face: {fileID: 21300000, guid: 310e27d11e2443548a377fc74192a68f, type: 3}
+      dataTime:
+        speedChar: 0.75
+        speedSpace: 0.75
+    - dataDialogue:
+        nameChar: Knight
+        isCharacter: 1
+        dialogue: '"I''m in a hurry," damn brute...'
         face: {fileID: 21300000, guid: 310e27d11e2443548a377fc74192a68f, type: 3}
       dataTime:
         speedChar: 0.75

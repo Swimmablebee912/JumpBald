@@ -21,18 +21,10 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Vagabond
         isCharacter: 1
-        dialogue: Hey, how are you?
-        face: {fileID: 21300000, guid: 5a17314bf1c04504192dce8b243bae3f, type: 3}
-      dataTime:
-        speedChar: 1
-        speedSpace: 1
-    - dataDialogue:
-        nameChar: Vagabond
-        isCharacter: 1
-        dialogue: 'Someday he will get what he deserves.
+        dialogue: 'Hello... Again?... I don''t know anymore.
 
-          he can''t attack
-          us like this.'
+          I''ve seen
+          so many come and go...'
         face: {fileID: 21300000, guid: 5a17314bf1c04504192dce8b243bae3f, type: 3}
       dataTime:
         speedChar: 1
@@ -40,9 +32,8 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Vagabond
         isCharacter: 1
-        dialogue: 'Good luck on your crusade
-
-          I''m already tired.'
+        dialogue: Someday, he will get what he deserves. He can't attack us like
+          that...
         face: {fileID: 21300000, guid: 5a17314bf1c04504192dce8b243bae3f, type: 3}
       dataTime:
         speedChar: 1
@@ -50,7 +41,31 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Vagabond
         isCharacter: 1
-        dialogue: JeJe.
+        dialogue: The scoundrel is at the top, past the castle gate...
+        face: {fileID: 21300000, guid: 5a17314bf1c04504192dce8b243bae3f, type: 3}
+      dataTime:
+        speedChar: 1
+        speedSpace: 1
+    - dataDialogue:
+        nameChar: Vagabond
+        isCharacter: 1
+        dialogue: Or so they say... I haven't made much progress... I'm tired...
+        face: {fileID: 21300000, guid: 5a17314bf1c04504192dce8b243bae3f, type: 3}
+      dataTime:
+        speedChar: 1
+        speedSpace: 1
+    - dataDialogue:
+        nameChar: Vagabond
+        isCharacter: 1
+        dialogue: A bit further up, I've set up a campfire, but I fell again...
+        face: {fileID: 21300000, guid: 5a17314bf1c04504192dce8b243bae3f, type: 3}
+      dataTime:
+        speedChar: 1
+        speedSpace: 1
+    - dataDialogue:
+        nameChar: Vagabond
+        isCharacter: 1
+        dialogue: Good luck on your quest. I'm too exhausted to keep climbing...
         face: {fileID: 21300000, guid: 5a17314bf1c04504192dce8b243bae3f, type: 3}
       dataTime:
         speedChar: 1

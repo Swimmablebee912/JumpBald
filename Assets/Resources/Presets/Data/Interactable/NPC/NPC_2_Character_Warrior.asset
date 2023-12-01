@@ -21,7 +21,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Warrior
         isCharacter: 1
-        dialogue: Hey
+        dialogue: Hahaha. Another hopeful face, huh?
         face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
       dataTime:
         speedChar: 1.125
@@ -29,7 +29,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Warrior
         isCharacter: 1
-        dialogue: (Complete)
+        dialogue: I can lend you my sword until I catch my breath...
         face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
       dataTime:
         speedChar: 1.125
@@ -37,7 +37,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Warrior
         isCharacter: 1
-        dialogue: (Complete)
+        dialogue: Strike with it when you're jumping,
         face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
       dataTime:
         speedChar: 1.125
@@ -45,7 +45,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Warrior
         isCharacter: 1
-        dialogue: (Complete)
+        dialogue: You'll pause in mid-air and control your descent...
         face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
       dataTime:
         speedChar: 1.125
@@ -53,7 +53,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Warrior
         isCharacter: 1
-        dialogue: (Complete)
+        dialogue: If you see my brother, hit him for me...
         face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
       dataTime:
         speedChar: 1.125
@@ -61,7 +61,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Warrior
         isCharacter: 1
-        dialogue: Jajaja
+        dialogue: The stubborn fool tried to climb the right path and left me behind...
         face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
       dataTime:
         speedChar: 1.125

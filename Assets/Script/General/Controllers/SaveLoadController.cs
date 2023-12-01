@@ -24,6 +24,7 @@ public class SaveLoadController : MonoBehaviour
     public RunData GetData_CurrentSave () { return  currentRun; }
     public void SetData_CurrentSave (RunData currentSave) { currentRun = currentSave; }
 
+    public void Delete() { if (File.Exists(path)) { File.Delete(path); } }
     public Runs Load() {
         if (File.Exists(path))  {
             // BinaryFormatter formatter = new BinaryFormatter();
@@ -68,6 +69,8 @@ public class SaveLoadController : MonoBehaviour
         string json = JsonUtility.ToJson(runs);
         File.WriteAllText(path, json);
     }
+
+
 
     private string EncryptData(string data)  {
         // char[] dataChars = data.ToCharArray();

@@ -19,6 +19,8 @@ public class MainMenuController : MonoBehaviour
     public void Function_Button_toOptions () {  GameManager.main.system_GameFlow.ChangeSubScene("Options"); }
     public void Function_Button_toCredits () {  GameManager.main.system_GameFlow.ChangeSubScene("Credits"); }
 
+    public void Function_DeleteRun() { SaveLoadController.main.Delete(); LoadData();}
+
     private void Start(){
         AudioManager.main.PlayMUSIC("MainMenu");
     }

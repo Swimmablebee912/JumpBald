@@ -19,18 +19,25 @@ MonoBehaviour:
       text: Around the world.
       illustration: {fileID: 21300000, guid: 3471b37fe833a2e4f9ba77f0bb192638, type: 3}
     - nameDiapositive: Intro
-      text: Around the world, there are the balds.
+      text: 'Bald people... '
       illustration: {fileID: 21300000, guid: d691773a900d57642b1ebf56af228843, type: 3}
     - nameDiapositive: Intro
-      text: 'Beautiful and normal people.
-
-'
+      text: "Sweet and beautiful bald people of the world... \n"
+      illustration: {fileID: 21300000, guid: d691773a900d57642b1ebf56af228843, type: 3}
+    - nameDiapositive: Intro
+      text: They used to live peacefully until that message arrived.
       illustration: {fileID: 21300000, guid: b6ddd9bfe47fdf940bd9fcd284f981be, type: 3}
     - nameDiapositive: Intro
-      text: A marginalized and ridiculed minority.
+      text: '''Twinkle, twinkle  hairless people''. There was absolute rage everywhere.
+
+'
       illustration: {fileID: 21300000, guid: aa6d5b8f73204864ba097749e80a1b2e, type: 3}
     - nameDiapositive: Intro
-      text: But this ends here; it will no longer be tolerated.
+      text: Now, the sweet and beautiful bald people pick up their weapons and join
+        forces
+      illustration: {fileID: 21300000, guid: 90f738f1d663c3341a7adb2c53384b40, type: 3}
+    - nameDiapositive: Intro
+      text: "To get to the top and defeat their vicious\_aggressor."
       illustration: {fileID: 21300000, guid: 90f738f1d663c3341a7adb2c53384b40, type: 3}
   configuration:
     ToNextScene: Gameplay
