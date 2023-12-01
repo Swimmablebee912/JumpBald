@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3e2c5e7d77c584398f94cb3717e30a, type: 3}
+  m_Name: NPC_3_Character_Blacksmith
+  m_EditorClassIdentifier: 
+  data:
+    name: Blacksmith
+    description: He is a dying Blacksmith.
+    illustration: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
+  configuration:
+    dialogues:
+    - dataDialogue:
+        nameChar: Blacksmith
+        isCharacter: 1
+        dialogue: Hey
+        face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
+      dataTime:
+        speedChar: 0.75
+        speedSpace: 0.75
+    - dataDialogue:
+        nameChar: Blacksmith
+        isCharacter: 1
+        dialogue: (Complete)
+        face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
+      dataTime:
+        speedChar: 0.75
+        speedSpace: 0.75
+    - dataDialogue:
+        nameChar: Blacksmith
+        isCharacter: 1
+        dialogue: (Complete)
+        face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
+      dataTime:
+        speedChar: 0.75
+        speedSpace: 0.75
+    - dataDialogue:
+        nameChar: Blacksmith
+        isCharacter: 1
+        dialogue: (Complete)
+        face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
+      dataTime:
+        speedChar: 0.75
+        speedSpace: 0.75
+    - dataDialogue:
+        nameChar: Blacksmith
+        isCharacter: 1
+        dialogue: Jojo.
+        face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
+      dataTime:
+        speedChar: 0.75
+        speedSpace: 0.75

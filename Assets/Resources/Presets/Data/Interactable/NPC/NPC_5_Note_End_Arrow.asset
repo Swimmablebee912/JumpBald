@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a3e2c5e7d77c584398f94cb3717e30a, type: 3}
-  m_Name: NPC_3_Character_Knight
+  m_Name: NPC_5_Note_End_Arrow
   m_EditorClassIdentifier: 
   data:
-    name: Knight
-    description: He is a dying Knight.
-    illustration: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
+    name: Note
+    description: A sign indicating the closed door of the castle
+    illustration: {fileID: 21300000, guid: bd38eb7a902438342b8baa98f7d1b423, type: 3}
   configuration:
     dialogues:
     - dataDialogue:
-        nameChar: Knight
-        isCharacter: 1
-        dialogue: Hey
-        face: {fileID: 21300000, guid: 5a956870f04291f4981cd953229e5684, type: 3}
+        nameChar: Note
+        isCharacter: 0
+        dialogue: "\rSorry, the castle gate will remain closed until Monday."
+        face: {fileID: 21300000, guid: bd38eb7a902438342b8baa98f7d1b423, type: 3}
       dataTime:
-        speedChar: 0.75
-        speedSpace: 0.75
+        speedChar: 1
+        speedSpace: 1

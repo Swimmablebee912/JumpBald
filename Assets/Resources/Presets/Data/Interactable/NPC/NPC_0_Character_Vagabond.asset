@@ -47,3 +47,11 @@ MonoBehaviour:
       dataTime:
         speedChar: 1
         speedSpace: 1
+    - dataDialogue:
+        nameChar: Vagabond
+        isCharacter: 1
+        dialogue: JeJe.
+        face: {fileID: 21300000, guid: 5a17314bf1c04504192dce8b243bae3f, type: 3}
+      dataTime:
+        speedChar: 1
+        speedSpace: 1

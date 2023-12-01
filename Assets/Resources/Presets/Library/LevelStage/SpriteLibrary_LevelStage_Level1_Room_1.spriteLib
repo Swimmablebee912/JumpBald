@@ -47,6 +47,11 @@ MonoBehaviour:
       m_Sprite: {fileID: 21300000, guid: d44240cee5d21834b807a6580a3235af, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 21300000, guid: d44240cee5d21834b807a6580a3235af, type: 3}
+    - m_Name: CentergroundBAck
+      m_Hash: 558645047
+      m_Sprite: {fileID: 21300000, guid: be561c03d00d9a84dbf664abacbd3657, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: be561c03d00d9a84dbf664abacbd3657, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 6
+    m_EntryOverrideCount: 7
   m_PrimaryLibraryGUID: 

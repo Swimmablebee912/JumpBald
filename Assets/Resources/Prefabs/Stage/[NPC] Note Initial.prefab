@@ -306,7 +306,7 @@ Animator:
   m_GameObject: {fileID: 1888888584379854816}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 60d7f22f25b73b845af247dd2faf42ad, type: 2}
+  m_Controller: {fileID: 22100000, guid: 26036bcde3b294e46a0854ce48b1882d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -376,6 +376,7 @@ MonoBehaviour:
     scrNPC: {fileID: 0}
     anim: {fileID: 1888888584379854823}
     data: {fileID: 11400000, guid: 8e34fed1f86d6da4ebce64598a0bb650, type: 2}
+    toCutscene: {fileID: 0}
     countDialogue: 0
 --- !u!1 &1888888584512150136
 GameObject:

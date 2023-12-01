@@ -21,12 +21,12 @@ MonoBehaviour:
       m_Hash: 404435067
       m_Sprite: {fileID: 21300000, guid: de56d9a17ba3a9146aa2b60d3fe4cdc1, type: 3}
       m_FromMain: 1
-      m_SpriteOverride: {fileID: 21300000, guid: 4b49cd2b60b5d3b4a8328d3d1c177322, type: 3}
+      m_SpriteOverride: {fileID: 21300000, guid: f7a2249aff8e50c4f858c425c69c7696, type: 3}
     - m_Name: Idle1
       m_Hash: 790364397
       m_Sprite: {fileID: 21300000, guid: 6dd85b520d187f749a616aeaa6edf62e, type: 3}
       m_FromMain: 1
-      m_SpriteOverride: {fileID: 21300000, guid: ea499945515a8f74685b4d52d131e9d4, type: 3}
+      m_SpriteOverride: {fileID: 21300000, guid: 2b0473a47db689a409cf0db41b26ab1f, type: 3}
     m_FromMain: 1
     m_EntryOverrideCount: 2
   m_PrimaryLibraryGUID: dd0fff5a313110f439f46911800e36bb

@@ -442,7 +442,7 @@ public class Player : Element
         public void ChangeWeapon (int count) { 
             if(dataRead.weapons.Count > 1) { 
                 dataRead.idWeapon += count; 
-                if(dataRead.idWeapon >= dataRead.weapons.Count) dataRead.idWeapon = 0;  
+                if(dataRead.idWeapon >= dataRead.weapons.Count) dataRead.idWeapon = 1;  
             } 
             SetWeapon(); 
         }
@@ -450,6 +450,7 @@ public class Player : Element
             if(dataRead.checkpoints.Count > 1) {
                 dataRead.idCheckpoint += count; if(dataRead.idCheckpoint>=dataRead.checkpoints.Count) dataRead.idCheckpoint = 0;
                 scrPlayer.transform.position = LoadCheckpoint();
+                CameraManager.main.SetOffset(Vector3.zero);
                 return true;
             }
             else { return dataRead.checkpoints.Count > 1; }

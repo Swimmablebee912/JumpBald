@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2aef44cd05541a44dbf741a6f42cc659, type: 3}
+    - target: {fileID: 1888888583828155970, guid: 0411a97e24cf87c4bae9d841e3ac72d9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.21
+      objectReference: {fileID: 0}
     - target: {fileID: 1888888584379854816, guid: 0411a97e24cf87c4bae9d841e3ac72d9, type: 3}
       propertyPath: m_Name
       value: '[NPC] Note_End'
@@ -28,12 +32,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1888888584379854821, guid: 0411a97e24cf87c4bae9d841e3ac72d9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888888584379854821, guid: 0411a97e24cf87c4bae9d841e3ac72d9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.64
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 1888888584379854821, guid: 0411a97e24cf87c4bae9d841e3ac72d9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 217.93
+      value: 217.8
       objectReference: {fileID: 0}
     - target: {fileID: 1888888584379854821, guid: 0411a97e24cf87c4bae9d841e3ac72d9, type: 3}
       propertyPath: m_LocalPosition.z

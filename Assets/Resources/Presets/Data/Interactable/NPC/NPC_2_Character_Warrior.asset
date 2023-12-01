@@ -29,7 +29,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Warrior
         isCharacter: 1
-        dialogue: JaJaJa
+        dialogue: (Complete)
         face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
       dataTime:
         speedChar: 1.125
@@ -37,7 +37,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Warrior
         isCharacter: 1
-        dialogue: JaJaJa
+        dialogue: (Complete)
         face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
       dataTime:
         speedChar: 1.125
@@ -45,7 +45,7 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Warrior
         isCharacter: 1
-        dialogue: JaJaJa
+        dialogue: (Complete)
         face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
       dataTime:
         speedChar: 1.125
@@ -53,7 +53,15 @@ MonoBehaviour:
     - dataDialogue:
         nameChar: Warrior
         isCharacter: 1
-        dialogue: JaJaJa
+        dialogue: (Complete)
+        face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
+      dataTime:
+        speedChar: 1.125
+        speedSpace: 2
+    - dataDialogue:
+        nameChar: Warrior
+        isCharacter: 1
+        dialogue: Jajaja
         face: {fileID: 21300000, guid: afa9ab0ae4d2ad843ba04e91d5af8e01, type: 3}
       dataTime:
         speedChar: 1.125

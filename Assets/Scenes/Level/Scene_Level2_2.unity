@@ -248,6 +248,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1098939676120334015, guid: 1d3a41012f6d2a1428e6ed9bb250985c, type: 3}
+      propertyPath: m_labelHash
+      value: 6.9201553e-19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3589843044652154852, guid: 1d3a41012f6d2a1428e6ed9bb250985c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5758250121282877192, guid: 1d3a41012f6d2a1428e6ed9bb250985c, type: 3}
       propertyPath: m_Name
       value: Room_2_2
@@ -296,5 +304,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5758250122863853862, guid: 1d3a41012f6d2a1428e6ed9bb250985c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279615496308748232, guid: 1d3a41012f6d2a1428e6ed9bb250985c, type: 3}
+      propertyPath: m_Size.x
+      value: 19.203749
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279615496308748232, guid: 1d3a41012f6d2a1428e6ed9bb250985c, type: 3}
+      propertyPath: m_Size.y
+      value: 23.039999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279615496308748232, guid: 1d3a41012f6d2a1428e6ed9bb250985c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8695a6d7e2a053d4085b39e53ebcb800, type: 3}
+    - target: {fileID: 8279615496308748232, guid: 1d3a41012f6d2a1428e6ed9bb250985c, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380675298775436275, guid: 1d3a41012f6d2a1428e6ed9bb250985c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cfbb55b027fb22e49bd1471c749cfdc0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d3a41012f6d2a1428e6ed9bb250985c, type: 3}
